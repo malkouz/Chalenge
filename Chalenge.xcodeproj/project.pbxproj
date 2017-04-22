@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		881C76351EAB4834005EDB67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881C76341EAB4834005EDB67 /* AppDelegate.swift */; };
-		881C76371EAB4834005EDB67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881C76361EAB4834005EDB67 /* ViewController.swift */; };
 		881C763A1EAB4834005EDB67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 881C76381EAB4834005EDB67 /* Main.storyboard */; };
 		881C763C1EAB4834005EDB67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 881C763B1EAB4834005EDB67 /* Assets.xcassets */; };
 		881C763F1EAB4834005EDB67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 881C763D1EAB4834005EDB67 /* LaunchScreen.storyboard */; };
@@ -21,12 +20,12 @@
 		881C765B1EAB814C005EDB67 /* AppDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 881C76591EAB814C005EDB67 /* AppDataModel.xcdatamodeld */; };
 		881C765E1EAB83D0005EDB67 /* ShopModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881C765C1EAB83D0005EDB67 /* ShopModel+CoreDataClass.swift */; };
 		881C765F1EAB83D0005EDB67 /* ShopModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881C765D1EAB83D0005EDB67 /* ShopModel+CoreDataProperties.swift */; };
+		881C76611EAB8DBA005EDB67 /* ShopDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881C76601EAB8DBA005EDB67 /* ShopDetailsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		881C76311EAB4834005EDB67 /* Chalenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chalenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		881C76341EAB4834005EDB67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
-		881C76361EAB4834005EDB67 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		881C76391EAB4834005EDB67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		881C763B1EAB4834005EDB67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		881C763E1EAB4834005EDB67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +39,7 @@
 		881C765A1EAB814C005EDB67 /* AppDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AppDataModel.xcdatamodel; sourceTree = "<group>"; };
 		881C765C1EAB83D0005EDB67 /* ShopModel+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShopModel+CoreDataClass.swift"; sourceTree = "<group>"; };
 		881C765D1EAB83D0005EDB67 /* ShopModel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShopModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		881C76601EAB8DBA005EDB67 /* ShopDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopDetailsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,7 +75,6 @@
 				881C76461EAB7E13005EDB67 /* Model */,
 				881C76471EAB7E3B005EDB67 /* View */,
 				881C76481EAB7E4F005EDB67 /* ViewModel */,
-				881C76361EAB4834005EDB67 /* ViewController.swift */,
 				881C763B1EAB4834005EDB67 /* Assets.xcassets */,
 				881C763D1EAB4834005EDB67 /* LaunchScreen.storyboard */,
 				881C76401EAB4834005EDB67 /* Info.plist */,
@@ -99,6 +98,7 @@
 				881C76341EAB4834005EDB67 /* AppDelegate.swift */,
 				881C76381EAB4834005EDB67 /* Main.storyboard */,
 				881C76491EAB7EA9005EDB67 /* ShopsVC.swift */,
+				881C76601EAB8DBA005EDB67 /* ShopDetailsVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -216,8 +216,8 @@
 				881C765F1EAB83D0005EDB67 /* ShopModel+CoreDataProperties.swift in Sources */,
 				881C76541EAB7F9D005EDB67 /* DataSource.swift in Sources */,
 				881C764C1EAB7ED5005EDB67 /* ShopsVM.swift in Sources */,
-				881C76371EAB4834005EDB67 /* ViewController.swift in Sources */,
 				881C76561EAB7FBB005EDB67 /* LocalDataSource.swift in Sources */,
+				881C76611EAB8DBA005EDB67 /* ShopDetailsVC.swift in Sources */,
 				881C76511EAB7F7B005EDB67 /* DataSourceProtocol.swift in Sources */,
 				881C764A1EAB7EA9005EDB67 /* ShopsVC.swift in Sources */,
 				881C76351EAB4834005EDB67 /* AppDelegate.swift in Sources */,

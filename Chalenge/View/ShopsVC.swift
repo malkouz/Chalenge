@@ -21,7 +21,26 @@ class ShopsVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        addShopDetailsView()
+    }
+    
 
+    func addShopDetailsView() {
+        // 1- Init bottomSheetVC
+        let detailsVC: ShopDetailsVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ShopDetailsVC") as! ShopDetailsVC
+        
+        // 2- Add bottomSheetVC as a child view
+        self.addChildViewController(detailsVC)
+        self.view.addSubview(detailsVC.view)
+        detailsVC.didMove(toParentViewController: self)
+        
+        // 3- Adjust bottomSheet frame and initial position.
+        let height = view.frame.height
+        let width  = view.frame.width
+        detailsVC.view.frame = CGRect(x: 0, y: self.view.frame.maxY, width: width, height: height)
+    }
     /*
     // MARK: - Navigation
 
