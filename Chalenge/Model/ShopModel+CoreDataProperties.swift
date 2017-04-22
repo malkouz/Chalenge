@@ -16,12 +16,10 @@ extension ShopModel {
         return NSFetchRequest<ShopModel>(entityName: "ShopModel");
     }
 
-    @NSManaged public var name: String?
-    @NSManaged public var branchNumber: Int16
-    @NSManaged public var image: NSData?
+    @NSManaged public var id: Int16
     @NSManaged public var desc: String?
-    @NSManaged public var latitude: Double
-    @NSManaged public var longitude: Double
-    @NSManaged public var address: String?
+    @NSManaged public var imageURL: String?
+    @NSManaged public var name: String?
 
 }
+

@@ -1,5 +1,5 @@
 //
-//  ShopModel+CoreDataClass.swift
+//  BranchModel+CoreDataClass.swift
 //  Chalenge
 //
 //  Created by Moayad Al kouz on 7/25/1438 AH.
@@ -10,6 +10,6 @@ import Foundation
 import CoreData
 
 
-public class ShopModel: BranchModel {
+public class BranchModel: NSManagedObject {
 
 }
