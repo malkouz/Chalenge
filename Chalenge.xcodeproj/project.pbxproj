@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		188D3EBF4A2D58B97AE75C55 /* Pods_Chalenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50F815DC4A3493330F2AC727 /* Pods_Chalenge.framework */; };
 		881C76351EAB4834005EDB67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881C76341EAB4834005EDB67 /* AppDelegate.swift */; };
 		881C763A1EAB4834005EDB67 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 881C76381EAB4834005EDB67 /* Main.storyboard */; };
-		881C763C1EAB4834005EDB67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 881C763B1EAB4834005EDB67 /* Assets.xcassets */; };
 		881C763F1EAB4834005EDB67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 881C763D1EAB4834005EDB67 /* LaunchScreen.storyboard */; };
 		881C764A1EAB7EA9005EDB67 /* ShopsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881C76491EAB7EA9005EDB67 /* ShopsVC.swift */; };
-		881C764C1EAB7ED5005EDB67 /* ShopsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881C764B1EAB7ED5005EDB67 /* ShopsVM.swift */; };
 		881C76511EAB7F7B005EDB67 /* DataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881C76501EAB7F7B005EDB67 /* DataSourceProtocol.swift */; };
 		881C76541EAB7F9D005EDB67 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881C76531EAB7F9D005EDB67 /* DataSource.swift */; };
 		881C76561EAB7FBB005EDB67 /* LocalDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881C76551EAB7FBB005EDB67 /* LocalDataSource.swift */; };
@@ -23,17 +22,23 @@
 		881C76771EAB95A3005EDB67 /* ShopModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881C76731EAB95A3005EDB67 /* ShopModel+CoreDataProperties.swift */; };
 		881C76781EAB95A3005EDB67 /* BranchModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881C76741EAB95A3005EDB67 /* BranchModel+CoreDataClass.swift */; };
 		881C76791EAB95A3005EDB67 /* BranchModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881C76751EAB95A3005EDB67 /* BranchModel+CoreDataProperties.swift */; };
+		EE959E0C1EAC8553009D5B7B /* LocalContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE959E0B1EAC8553009D5B7B /* LocalContext.swift */; };
+		EE959E0E1EAC85AD009D5B7B /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE959E0D1EAC85AD009D5B7B /* EndPoints.swift */; };
+		EE959E111EAC85B6009D5B7B /* DataParsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE959E0F1EAC85B6009D5B7B /* DataParsers.swift */; };
+		EE959E121EAC85B6009D5B7B /* RemoteContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE959E101EAC85B6009D5B7B /* RemoteContext.swift */; };
+		EE959E141EAC8603009D5B7B /* ShopsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE959E131EAC8603009D5B7B /* ShopsVM.swift */; };
+		EE959E171EAC8667009D5B7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE959E161EAC8667009D5B7B /* Assets.xcassets */; };
+		EE959E191EAC866E009D5B7B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EE959E181EAC866E009D5B7B /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		50F815DC4A3493330F2AC727 /* Pods_Chalenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chalenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D265DFB682765305C27C28A /* Pods-Chalenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chalenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chalenge/Pods-Chalenge.debug.xcconfig"; sourceTree = "<group>"; };
 		881C76311EAB4834005EDB67 /* Chalenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chalenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		881C76341EAB4834005EDB67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
 		881C76391EAB4834005EDB67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		881C763B1EAB4834005EDB67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		881C763E1EAB4834005EDB67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		881C76401EAB4834005EDB67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		881C76491EAB7EA9005EDB67 /* ShopsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopsVC.swift; sourceTree = "<group>"; };
-		881C764B1EAB7ED5005EDB67 /* ShopsVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ShopsVM.swift; path = ../ShopsVM.swift; sourceTree = "<group>"; };
 		881C76501EAB7F7B005EDB67 /* DataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSourceProtocol.swift; sourceTree = "<group>"; };
 		881C76531EAB7F9D005EDB67 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		881C76551EAB7FBB005EDB67 /* LocalDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDataSource.swift; sourceTree = "<group>"; };
@@ -44,6 +49,14 @@
 		881C76731EAB95A3005EDB67 /* ShopModel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ShopModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		881C76741EAB95A3005EDB67 /* BranchModel+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BranchModel+CoreDataClass.swift"; sourceTree = "<group>"; };
 		881C76751EAB95A3005EDB67 /* BranchModel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BranchModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EE959E0B1EAC8553009D5B7B /* LocalContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalContext.swift; sourceTree = "<group>"; };
+		EE959E0D1EAC85AD009D5B7B /* EndPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		EE959E0F1EAC85B6009D5B7B /* DataParsers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataParsers.swift; sourceTree = "<group>"; };
+		EE959E101EAC85B6009D5B7B /* RemoteContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteContext.swift; sourceTree = "<group>"; };
+		EE959E131EAC8603009D5B7B /* ShopsVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopsVM.swift; sourceTree = "<group>"; };
+		EE959E161EAC8667009D5B7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE959E181EAC866E009D5B7B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFAA9E6C75982C2DDC398DC3 /* Pods-Chalenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chalenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chalenge/Pods-Chalenge.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,17 +64,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188D3EBF4A2D58B97AE75C55 /* Pods_Chalenge.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1331493682A72F06485D3D31 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50F815DC4A3493330F2AC727 /* Pods_Chalenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		327DC4A3A5A023B733069BC6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D265DFB682765305C27C28A /* Pods-Chalenge.debug.xcconfig */,
+				EFAA9E6C75982C2DDC398DC3 /* Pods-Chalenge.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		881C76281EAB4834005EDB67 = {
 			isa = PBXGroup;
 			children = (
 				881C76331EAB4834005EDB67 /* Chalenge */,
 				881C76321EAB4834005EDB67 /* Products */,
+				327DC4A3A5A023B733069BC6 /* Pods */,
+				1331493682A72F06485D3D31 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,9 +112,7 @@
 				881C76461EAB7E13005EDB67 /* Model */,
 				881C76471EAB7E3B005EDB67 /* View */,
 				881C76481EAB7E4F005EDB67 /* ViewModel */,
-				881C763B1EAB4834005EDB67 /* Assets.xcassets */,
-				881C763D1EAB4834005EDB67 /* LaunchScreen.storyboard */,
-				881C76401EAB4834005EDB67 /* Info.plist */,
+				EE959E151EAC863A009D5B7B /* Supporting Files */,
 			);
 			path = Chalenge;
 			sourceTree = "<group>";
@@ -101,6 +132,7 @@
 		881C76471EAB7E3B005EDB67 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				881C763D1EAB4834005EDB67 /* LaunchScreen.storyboard */,
 				881C76341EAB4834005EDB67 /* AppDelegate.swift */,
 				881C76381EAB4834005EDB67 /* Main.storyboard */,
 				881C76491EAB7EA9005EDB67 /* ShopsVC.swift */,
@@ -112,7 +144,7 @@
 		881C76481EAB7E4F005EDB67 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				881C764B1EAB7ED5005EDB67 /* ShopsVM.swift */,
+				EE959E131EAC8603009D5B7B /* ShopsVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -131,7 +163,10 @@
 		881C764E1EAB7F51005EDB67 /* RemoteData */ = {
 			isa = PBXGroup;
 			children = (
+				EE959E0D1EAC85AD009D5B7B /* EndPoints.swift */,
 				881C76571EAB7FC8005EDB67 /* RemoteDataSource.swift */,
+				EE959E0F1EAC85B6009D5B7B /* DataParsers.swift */,
+				EE959E101EAC85B6009D5B7B /* RemoteContext.swift */,
 			);
 			name = RemoteData;
 			sourceTree = "<group>";
@@ -140,9 +175,19 @@
 			isa = PBXGroup;
 			children = (
 				881C76551EAB7FBB005EDB67 /* LocalDataSource.swift */,
+				EE959E0B1EAC8553009D5B7B /* LocalContext.swift */,
 				881C76591EAB814C005EDB67 /* AppDataModel.xcdatamodeld */,
 			);
 			name = LocalData;
+			sourceTree = "<group>";
+		};
+		EE959E151EAC863A009D5B7B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EE959E161EAC8667009D5B7B /* Assets.xcassets */,
+				EE959E181EAC866E009D5B7B /* Info.plist */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,9 +197,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 881C76431EAB4834005EDB67 /* Build configuration list for PBXNativeTarget "Chalenge" */;
 			buildPhases = (
+				2993F4A241FDA7A2F617E3FE /* [CP] Check Pods Manifest.lock */,
 				881C762D1EAB4834005EDB67 /* Sources */,
 				881C762E1EAB4834005EDB67 /* Frameworks */,
 				881C762F1EAB4834005EDB67 /* Resources */,
+				4DD4D4FBBEA2C4E2AD0498D9 /* [CP] Embed Pods Frameworks */,
+				3577C95AA569F2BF796A4B47 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -205,29 +253,82 @@
 			buildActionMask = 2147483647;
 			files = (
 				881C763F1EAB4834005EDB67 /* LaunchScreen.storyboard in Resources */,
-				881C763C1EAB4834005EDB67 /* Assets.xcassets in Resources */,
+				EE959E171EAC8667009D5B7B /* Assets.xcassets in Resources */,
+				EE959E191EAC866E009D5B7B /* Info.plist in Resources */,
 				881C763A1EAB4834005EDB67 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2993F4A241FDA7A2F617E3FE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3577C95AA569F2BF796A4B47 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chalenge/Pods-Chalenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DD4D4FBBEA2C4E2AD0498D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chalenge/Pods-Chalenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		881C762D1EAB4834005EDB67 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EE959E141EAC8603009D5B7B /* ShopsVM.swift in Sources */,
 				881C765B1EAB814C005EDB67 /* AppDataModel.xcdatamodeld in Sources */,
+				EE959E0E1EAC85AD009D5B7B /* EndPoints.swift in Sources */,
 				881C76581EAB7FC8005EDB67 /* RemoteDataSource.swift in Sources */,
 				881C76771EAB95A3005EDB67 /* ShopModel+CoreDataProperties.swift in Sources */,
 				881C76791EAB95A3005EDB67 /* BranchModel+CoreDataProperties.swift in Sources */,
+				EE959E121EAC85B6009D5B7B /* RemoteContext.swift in Sources */,
 				881C76541EAB7F9D005EDB67 /* DataSource.swift in Sources */,
-				881C764C1EAB7ED5005EDB67 /* ShopsVM.swift in Sources */,
+				EE959E111EAC85B6009D5B7B /* DataParsers.swift in Sources */,
 				881C76561EAB7FBB005EDB67 /* LocalDataSource.swift in Sources */,
 				881C76611EAB8DBA005EDB67 /* ShopDetailsVC.swift in Sources */,
 				881C76511EAB7F7B005EDB67 /* DataSourceProtocol.swift in Sources */,
 				881C764A1EAB7EA9005EDB67 /* ShopsVC.swift in Sources */,
 				881C76781EAB95A3005EDB67 /* BranchModel+CoreDataClass.swift in Sources */,
+				EE959E0C1EAC8553009D5B7B /* LocalContext.swift in Sources */,
 				881C76351EAB4834005EDB67 /* AppDelegate.swift in Sources */,
 				881C76761EAB95A3005EDB67 /* ShopModel+CoreDataClass.swift in Sources */,
 			);
@@ -251,6 +352,7 @@
 				881C763E1EAB4834005EDB67 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -351,9 +453,10 @@
 		};
 		881C76441EAB4834005EDB67 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D265DFB682765305C27C28A /* Pods-Chalenge.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Chalenge/Info.plist;
+				INFOPLIST_FILE = "Chalenge/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Chalenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -363,9 +466,10 @@
 		};
 		881C76451EAB4834005EDB67 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFAA9E6C75982C2DDC398DC3 /* Pods-Chalenge.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Chalenge/Info.plist;
+				INFOPLIST_FILE = "Chalenge/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Chalenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
