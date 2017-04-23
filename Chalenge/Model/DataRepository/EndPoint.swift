@@ -1,10 +1,4 @@
-//
-//  EndPoints.swift
-//  BalaghV2
-//
-//  Created by Mobile Dev on 2/23/17.
-//  Copyright © 2017 Mobile Dev. All rights reserved.
-//
+
 
 import Foundation
 import Alamofire

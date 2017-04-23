@@ -13,6 +13,8 @@ class ShopsVM: NSObject {
     var shops =  [ShopModel]()
     var branches = [BranchModel]()
     
+    
+    
     func getShops (completion: ((NSError?) -> Void)?  ){
         DataSource.shared.getShops { [weak self] (error, models) in
             if let models = models{
@@ -40,15 +42,24 @@ class ShopsVM: NSObject {
     
     
     func getShopName() -> String{
+        if shops.count > 0 {
         return shops[0].name!
+        }
+        return ""
     }
     
     func getShopDesc() -> String{
-        return shops[0].desc!
+        if shops.count > 0 {
+            return shops[0].desc!
+        }
+        return ""
     }
     
-    func getShopImageURL() -> String{
-        return shops[0].imageURL!
+    func getShopImageURL() -> String?{
+        if shops.count > 0 {
+            return shops[0].imageURL!
+        }
+        return nil
     }
     
     func getBranchName(forIndex index: Int) -> String{

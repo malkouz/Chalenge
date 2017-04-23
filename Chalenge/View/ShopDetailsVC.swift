@@ -60,7 +60,11 @@ class ShopDetailsVC: UIViewController {
     func configureView(){
         lblShopName.text = shopsVM.getShopName()
         lblShopDesc.text = shopsVM.getShopDesc()
-        imgLogo.af_setImage(withURL: URL(string: shopsVM.getShopImageURL())!)
+        if let url = shopsVM.getShopImageURL(){
+        imgLogo.af_setImage(withURL: URL(string: url)!)
+        }
+        tblBranches.reloadData()
+        NotificationCenter.default.post(name: Notification.Name(rawValue: AddMarkersNotificationKey), object: nil)
     }
     
     func panGesture(_ recognizer: UIPanGestureRecognizer) {

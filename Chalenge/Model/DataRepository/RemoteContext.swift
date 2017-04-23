@@ -1,10 +1,4 @@
-//
-//  NetworkContext.swift
-//  Miras
-//
-//  Created by Murad Jamal on 1/11/16.
-//  Copyright © 2016 Thiqah. All rights reserved.
-//
+
 
 import Alamofire
 import SwiftyJSON

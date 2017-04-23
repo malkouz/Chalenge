@@ -6,48 +6,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Chalenge/Model/DataRepository/DataParser.swift"
-            timestampString = "514652672.189618"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "DataParser"
-            landmarkType = "3">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Chalenge/Model/DataRepository/RemoteContext.swift"
-            timestampString = "514652990.789412"
+            timestampString = "514669384.828417"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "buildURlRequest(endPoint:params:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Chalenge/Model/DataRepository/RemoteContext.swift"
-            timestampString = "514653010.528364"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
-            landmarkName = "request(endPoint:parameters:handleError:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -57,13 +25,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Chalenge/Model/DataRepository/DataSource.swift"
-            timestampString = "514654194.604115"
+            filePath = "Chalenge/Model/DataRepository/RemoteContext.swift"
+            timestampString = "514669384.828417"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "getShops(completion:)"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "request(endPoint:parameters:handleError:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -73,14 +41,78 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Chalenge/ViewModel/ShopsVM.swift"
-            timestampString = "514657646.883572"
+            filePath = "Chalenge/Model/DataRepository/DataSource.swift"
+            timestampString = "514671237.628672"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "getShops(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Chalenge/ViewModel/ShopsVM.swift"
+            timestampString = "514671518.612854"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
             landmarkName = "getBranchName(forIndex:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Chalenge/Model/DataRepository/DataSource.swift"
+            timestampString = "514671209.560022"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "getShops(completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Chalenge.DataSource.(getShops (completion : Swift.Optional&lt;(Swift.Optional&lt;__ObjC.NSError&gt;, Swift.Optional&lt;Swift.Array&lt;Chalenge.ShopModel&gt;&gt;) -&gt; ()&gt;) -&gt; ()).(closure #1)"
+                  moduleName = "Chalenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Chalenge/Chalenge/Model/DataRepository/DataSource.swift"
+                  timestampString = "514671605.792593"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "327">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Chalenge.DataSource.(getShops (completion : Swift.Optional&lt;(Swift.Optional&lt;__ObjC.NSError&gt;, Swift.Optional&lt;Swift.Array&lt;Chalenge.ShopModel&gt;&gt;) -&gt; ()&gt;) -&gt; ()).(closure #1).(closure #1)"
+                  moduleName = "Chalenge"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Chalenge/Chalenge/Model/DataRepository/DataSource.swift"
+                  timestampString = "514671605.794555"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "24">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

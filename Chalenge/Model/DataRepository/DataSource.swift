@@ -24,13 +24,16 @@ final class DataSource: NSObject, DataSourceProtocol {
     func getShops (completion: ((NSError?, [ShopModel]?) -> Void)?  ){
         localDataSource.getShops { [weak self] (error, models) in
             if let models = models{
+                if models.count > 0{
                 completion?(error, models)
-            }else{
+                    return
+                }
+            }
                 self?.remoteDataSource.getShops { (error, models) in
                     LocalContext.shared.saveContext()
                     completion?(error, models)
                 }
-            }
+            
         }
     }
     

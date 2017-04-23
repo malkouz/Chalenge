@@ -526,7 +526,7 @@ protocol DataSourceProtocol {
 
 /*
  {
- "shops": [
+ "shops": 
  {
  "name": "H & M",
  "branchNumber": 1,
@@ -551,7 +551,7 @@ protocol DataSourceProtocol {
  "longitude": 46.7075466143433,
  "address": "Riyadh - Road 4"
  }
- ]
+ 
  }
  ]
  }

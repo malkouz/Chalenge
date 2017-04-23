@@ -7,16 +7,25 @@
 //
 
 import UIKit
+import GoogleMaps
 
-class ShopsVC: UIViewController {
+let AddMarkersNotificationKey = "AddMarkersNotificationKey"
+
+class ShopsVC: UIViewController, GMSMapViewDelegate {
 
     lazy var detailsVC: ShopDetailsVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ShopDetailsVC") as! ShopDetailsVC
     
+    @IBOutlet weak var mapView:GMSMapView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-                
+        let camera = GMSCameraPosition.camera(withLatitude: 24.66080796834796, longitude: 46.74393475055695, zoom: 11.0)
+        mapView.camera = camera
+        mapView.delegate = self
+        // Creates a marker in the center of the map.
+        NotificationCenter.default.addObserver(self, selector: #selector(ShopsVC.addBranchesMarkers), name: Notification.Name(rawValue: AddMarkersNotificationKey), object: nil)
+
         // Do any additional setup after loading the view.
     }
 
@@ -47,17 +56,24 @@ class ShopsVC: UIViewController {
     }
     
     
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        detailsVC.view.isHidden = !detailsVC.view.isHidden
+    
+    
+    
+    func mapView(_ mapView: GMSMapView, didTapAt coordinate: CLLocationCoordinate2D) {
+    
+        detailsVC.view.isHidden = !(detailsVC.view.isHidden)
     }
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func gestureRecognizer(gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWithGestureRecognizer otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        return true
     }
-    */
-
+    
+    func addBranchesMarkers(){
+        for branch in detailsVC.shopsVM.branches{
+            let marker = GMSMarker()
+            marker.position = CLLocationCoordinate2D(latitude: branch.latitude, longitude: branch.longitude)
+            marker.title = branch.address
+            marker.map = mapView
+        }
+    }
 }

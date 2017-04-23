@@ -1,10 +1,4 @@
-//
-//  LocalDataContext.swift
-//  Miras
-//
-//  Created by Moayad Al kouz on 2/7/17.
-//  Copyright © 2017 Thiqah. All rights reserved.
-//
+
 
 import CoreData
 
@@ -125,8 +119,6 @@ class LocalContext {
         }
         catch
         {
-//            var errorInfo = ErrorInfo()
-//            errorInfo.errorCode = ErrorCodes.LocalDBError.rawValue
             print("Error with request: \(error)")
             return error
         }
@@ -150,9 +142,6 @@ class LocalContext {
         }
         catch
         {
-//            var errorInfo = ErrorInfo()
-//            errorInfo.errorCode = ErrorCodes.LocalDBError.rawValue
-//            print("Error with request: \(error)")
             return 0
         }
     }
