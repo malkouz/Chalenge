@@ -25,12 +25,12 @@ class LocalContext {
     }()
     lazy var managedObjectModel: NSManagedObjectModel = {
         // 1
-        let modelURL = Bundle.main.url(forResource: "Miras", withExtension: "momd")!
+        let modelURL = Bundle.main.url(forResource: "AppDataModel", withExtension: "momd")!
         return NSManagedObjectModel(contentsOf: modelURL)!
     }()
     lazy var persistentStoreCoordinator: NSPersistentStoreCoordinator = {
         let coordinator = NSPersistentStoreCoordinator(managedObjectModel: self.managedObjectModel)
-        let url = self.applicationDocumentsDirectory.appendingPathComponent("Miras.sqlite")
+        let url = self.applicationDocumentsDirectory.appendingPathComponent("AppDataModel.sqlite")
         do {
             let mOptions = [NSMigratePersistentStoresAutomaticallyOption: true,
                             NSInferMappingModelAutomaticallyOption: true]

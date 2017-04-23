@@ -7,10 +7,17 @@
 //
 
 import UIKit
+import AlamofireImage
 
 class ShopDetailsVC: UIViewController {
 
+    lazy var shopsVM = ShopsVM()
+    
     @IBOutlet weak var tblBranches: UITableView!
+    @IBOutlet weak var imgLogo: UIImageView!
+    @IBOutlet weak var lblShopName: UILabel!
+    @IBOutlet weak var lblShopDesc: UILabel!
+    
     
     let fullView: CGFloat = 100
     var partialView: CGFloat {
@@ -20,22 +27,24 @@ class ShopDetailsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        tblBranches.dataSource = self
+        tblBranches.delegate = self
         
+        shopsVM.getShops { [weak self] (error) in
+            self?.configureView()
+        }
+
         let gesture = UIPanGestureRecognizer.init(target: self, action: #selector(ShopDetailsVC.panGesture))
         gesture.delegate = self
         view.addGestureRecognizer(gesture)
         
         // Do any additional setup after loading the view.
     }
-
+    
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        prepareBackgroundView()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -48,25 +57,10 @@ class ShopDetailsVC: UIViewController {
         })
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
-    func prepareBackgroundView(){
-//        let blurEffect = UIBlurEffect.init(style: .dark)
-//        let visualEffect = UIVisualEffectView.init(effect: blurEffect)
-//        let bluredView = UIVisualEffectView.init(effect: blurEffect)
-//        bluredView.contentView.addSubview(visualEffect)
-//        visualEffect.frame = UIScreen.main.bounds
-//        bluredView.frame = UIScreen.main.bounds
-//        view.insertSubview(bluredView, at: 0)
+    func configureView(){
+        lblShopName.text = shopsVM.getShopName()
+        lblShopDesc.text = shopsVM.getShopDesc()
+        imgLogo.af_setImage(withURL: URL(string: shopsVM.getShopImageURL())!)
     }
     
     func panGesture(_ recognizer: UIPanGestureRecognizer) {
@@ -120,5 +114,22 @@ extension ShopDetailsVC: UIGestureRecognizerDelegate {
         return false
     }
     
+}
+
+extension ShopDetailsVC: UITableViewDelegate, UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return shopsVM.numberOfRows()
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "BranchCell", for: indexPath)
+        cell.textLabel?.text = shopsVM.getBranchName(forIndex: indexPath.row)
+        return cell
+    }
 }
 

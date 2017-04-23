@@ -9,27 +9,13 @@
 import Foundation
 import Alamofire
 
-var baseURLStr = "http://10.10.63.12:150/api"
+var baseURLStr = "https://api.myjson.com/bins"
     
 
 
 enum RemoteAddress: String  {
     
-    case Login = "UserManagment/Login"
-    case GetDashboardInfo = "Miscellaneous/GetDashboardInfo"
-  
-    
-    case Logout = "UserManagement/SignOut"
-    case UserProfile = "UserManagment/GetMyProfile"
-    
-    case GetGeneralActivitiesDomains = "ECR/GetGeneralActivitiesDomains"
-    case GetSpecialActivitiesDomains = "ECR/GetSpecialActivitiesDomains"
-    case GetActivitiesDomains = "ECR/GetActivitiesDomains"
-    case GetCRTypes = "ECR/GetCRTypes"
-    case GetActivityTypes = "ECR/GetActivityTypes"
-    case GetMyCRs = "ECR/GetMyCRs"
-    case CheckTradeNameAvailabilty = "TradeName/CheckTradeNameAvailabilty"
-    case ReserveSpecialTradeName = "TradeName/ReserveSpecialTradeName"
+    case getShops = "https://api.myjson.com/bins/zjn2r"
 
 }
 

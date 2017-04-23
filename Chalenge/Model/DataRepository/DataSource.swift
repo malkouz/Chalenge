@@ -20,4 +20,23 @@ final class DataSource: NSObject, DataSourceProtocol {
     
     static let shared: DataSourceProtocol = DataSource()
 
+    
+    func getShops (completion: ((NSError?, [ShopModel]?) -> Void)?  ){
+        localDataSource.getShops { [weak self] (error, models) in
+            if let models = models{
+                completion?(error, models)
+            }else{
+                self?.remoteDataSource.getShops { (error, models) in
+                    LocalContext.shared.saveContext()
+                    completion?(error, models)
+                }
+            }
+        }
+    }
+    
+    func getBrances (completion: ((NSError?, [BranchModel]?) -> Void)?  ){
+        localDataSource.getBrances { (error, models) in
+            completion?(error, models)
+        }
+    }
 }

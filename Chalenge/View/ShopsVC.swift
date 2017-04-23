@@ -10,9 +10,13 @@ import UIKit
 
 class ShopsVC: UIViewController {
 
+    lazy var detailsVC: ShopDetailsVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ShopDetailsVC") as! ShopDetailsVC
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+                
         // Do any additional setup after loading the view.
     }
 
@@ -29,7 +33,7 @@ class ShopsVC: UIViewController {
 
     func addShopDetailsView() {
         // 1- Init bottomSheetVC
-        let detailsVC: ShopDetailsVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ShopDetailsVC") as! ShopDetailsVC
+        
         
         // 2- Add bottomSheetVC as a child view
         self.addChildViewController(detailsVC)
@@ -40,6 +44,11 @@ class ShopsVC: UIViewController {
         let height = view.frame.height
         let width  = view.frame.width
         detailsVC.view.frame = CGRect(x: 0, y: self.view.frame.maxY, width: width, height: height)
+    }
+    
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        detailsVC.view.isHidden = !detailsVC.view.isHidden
     }
     /*
     // MARK: - Navigation

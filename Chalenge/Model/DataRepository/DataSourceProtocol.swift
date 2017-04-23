@@ -6,8 +6,13 @@
 //  Copyright © 1438 Moayad Al kouz. All rights reserved.
 //
 
+import  Foundation
+
 protocol DataSourceProtocol {
     
+    
+    func getShops (completion: ((NSError?, [ShopModel]?) -> Void)?  )
+    func getBrances (completion: ((NSError?, [BranchModel]?) -> Void)?  )
 }
 
 /*
@@ -527,24 +532,24 @@ protocol DataSourceProtocol {
  "branchNumber": 1,
  "image": "https://s1-cdn.hm.com/hm.com/ecom-image-static/1.67.0-5/desktop/logotype.png",
  "desc": "H&M's business concept is to offer fashion and quality at the best price in a sustainable way.",
- "latitude": 1234,
- "longitude": 1234,
- "address": "Riyadh - Khorais Road",
+ "latitude": 24.66080796834796,
+ "longitude": 46.74393475055695,
+ "address": "Riyadh - Road 1",
  "branches": [
  {
- "latitude": 1234,
- "longitude": 1234,
- "address": "Riyadh - Khorais Road"
+ "latitude": 24.72388429738599,
+ "longitude": 46.77153132855892,
+ "address": "Riyadh - Road 2"
  },
  {
- "latitude": 1234,
- "longitude": 1234,
- "address": "Riyadh - Khorais Road"
+ "latitude": 24.57310913749005,
+ "longitude": 46.69434875249863,
+ "address": "Riyadh - Road 3"
  },
  {
- "latitude": 1234,
- "longitude": 1234,
- "address": "Riyadh - Khorais Road"
+ "latitude": 24.62105864137005,
+ "longitude": 46.7075466143433,
+ "address": "Riyadh - Road 4"
  }
  ]
  }
