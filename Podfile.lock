@@ -1,4 +1,5 @@
 PODS:
+  - ACProgressHUD-Swift (1.2)
   - Alamofire (4.4.0)
   - AlamofireImage (3.2.0):
     - Alamofire (~> 4.1)
@@ -10,17 +11,19 @@ PODS:
   - SwiftyJSON (3.1.4)
 
 DEPENDENCIES:
+  - ACProgressHUD-Swift
   - Alamofire
   - AlamofireImage
   - GoogleMaps
   - SwiftyJSON
 
 SPEC CHECKSUMS:
+  ACProgressHUD-Swift: a08e699b2d8b3f3528d77c021ad6a326bc16f76d
   Alamofire: dc44b1600b800eb63da6a19039a0083d62a6a62d
   AlamofireImage: 157ed682cc81d3b9db4fb90c1f12180ac552d93b
   GoogleMaps: 104c418d61ab8a05dff06ed0784c25ea9d37da45
   SwiftyJSON: c2842d878f95482ffceec5709abc3d05680c0220
 
-PODFILE CHECKSUM: 59b4876b95e2afe3a55fc932bb3ddd1d3f666571
+PODFILE CHECKSUM: 60a52ab9439ee093f26d6c2778080f1efe880960
 
 COCOAPODS: 1.1.1

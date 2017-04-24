@@ -26,6 +26,7 @@ class ShopsVC: UIViewController, GMSMapViewDelegate {
         // Creates a marker in the center of the map.
         NotificationCenter.default.addObserver(self, selector: #selector(ShopsVC.addBranchesMarkers), name: Notification.Name(rawValue: AddMarkersNotificationKey), object: nil)
 
+        
         // Do any additional setup after loading the view.
     }
 

@@ -8,7 +8,7 @@
 
 import UIKit
 import AlamofireImage
-
+import ACProgressHUD_Swift
 class ShopDetailsVC: UIViewController {
 
     lazy var shopsVM = ShopsVM()
@@ -30,15 +30,23 @@ class ShopDetailsVC: UIViewController {
         tblBranches.dataSource = self
         tblBranches.delegate = self
         
-        shopsVM.getShops { [weak self] (error) in
-            self?.configureView()
-        }
+        
 
         let gesture = UIPanGestureRecognizer.init(target: self, action: #selector(ShopDetailsVC.panGesture))
         gesture.delegate = self
         view.addGestureRecognizer(gesture)
         
+        
+        loadData()
         // Do any additional setup after loading the view.
+    }
+    
+    func loadData(){
+        ACProgressHUD.shared.showHUD()
+        shopsVM.getShops { [weak self] (error) in
+            self?.configureView()
+            ACProgressHUD.shared.hideHUD()
+        }
     }
     
     

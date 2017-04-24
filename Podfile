@@ -13,4 +13,5 @@ pod 'Alamofire'
 pod 'AlamofireImage'
 pod 'GoogleMaps'
 pod 'SwiftyJSON'
+pod 'ACProgressHUD-Swift'
 end
